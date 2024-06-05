@@ -1,0 +1,158 @@
+#root {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+  width: 100%;
+  text-align: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+body {
+  place-items: normal;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  color: white;
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.page {
+  animation: upto 0.5s ease-in-out;
+}
+
+@keyframes upto {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.button-next {
+  background-color: rgb(14, 165, 233);
+}
+
+.button-next>span:first-child {
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+.slide-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  /* Space for the Next button */
+}
+
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-dot.active {
+  background-color: rgb(14, 165, 233);
+  border-radius: 5px;
+  width: 16px;
+}
+
+.check-menu {
+  text-align: left;
+  padding: 0;
+}
+
+.check-menu li {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px 0;
+  border-radius: 15px;
+  background-color: rgb(14, 165, 233);
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-menu .li1 button {
+  background: inherit;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.check-menu .li1,
+.check-menu .li2 {
+  align-items: center;
+  display: flex;
+}
+
+.check-menu button:hover {
+  border: none;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none !important;
+}
+
+.check-menu img {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px;
+}
+
+.join {
+  background-color: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
